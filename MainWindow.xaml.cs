@@ -99,6 +99,33 @@ namespace GA_HafsaM_List
 
         } //btnRemoveByIndex_Click
 
+        private void btnAddAtIndex_Click(object sender, RoutedEventArgs e)
+        {
+            //validate value
+            int index = -1;
+            bool isANumber = int.TryParse(txtIndex.Text, out index);
+
+            //check if the number is between 0 and the last index in the list
+            if (isANumber && index >= 0 && index < studentNames.Count)
+            {
+                studentNames.Insert(index, txtStudentName.Text);
+                DisplayStudents();
+            }
+            else
+            {
+                MessageBox.Show("Invalid index.");
+            }
+
+        } //btnAddAtIndex_Click
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            studentNames.Clear();
+            //or
+            //rtbDisplay.Text = "";
+            DisplayStudents();
+
+        } //btnClear_Click
 
 
 

@@ -7,22 +7,23 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Canvas>
-        <RichTextBox Height="137" Width="303" Canvas.Left="115" Canvas.Top="149" HorizontalAlignment="Left" VerticalAlignment="Center">
+        <RichTextBox Height="137" Width="303" Canvas.Left="287" Canvas.Top="167" HorizontalAlignment="Left" VerticalAlignment="Top">
             <FlowDocument>
                 <Paragraph>
                     <Run Name="rtbDisplay"/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Label x:Name="lblCurrentCount" Content="Current Count" Canvas.Top="149" HorizontalAlignment="Left" VerticalAlignment="Center" Canvas.Left="13" Width="90"/>
-        <Label Content="Student Name" HorizontalAlignment="Left" Canvas.Top="39" VerticalAlignment="Top" Width="93" Canvas.Left="9"/>
-        <TextBox x:Name="txtStudentName" TextWrapping="Wrap" Width="162" Canvas.Left="115" Canvas.Top="43" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-        <Button x:Name="btnAddStudent" Content="Add Student" Canvas.Left="294" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Center" Width="130" Click="btnAddStudent_Click"/>
-        <Label Content="Enter an Index" Canvas.Left="9" Canvas.Top="90" HorizontalAlignment="Left" VerticalAlignment="Center" Width="93"/>
-        <TextBox x:Name="txtIndex" TextWrapping="Wrap" Width="162" Canvas.Left="115" Canvas.Top="94" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-        <Button x:Name="btnDisplayStudent" Content="Display Student Name" Canvas.Left="294" Canvas.Top="93" HorizontalAlignment="Left" VerticalAlignment="Center" Width="130"/>
-        <Button x:Name="btnRemoveByIndex" Content="Remove by Index" Canvas.Left="139" Canvas.Top="310" HorizontalAlignment="Left" VerticalAlignment="Center" Width="127" Click="btnRemoveByIndex_Click"/>
-        <Button Content="Button" Canvas.Left="280" Canvas.Top="310" HorizontalAlignment="Left" VerticalAlignment="Center" Width="120"/>
+        <Label x:Name="lblCurrentCount" Content="Current Count" Canvas.Top="167" HorizontalAlignment="Left" VerticalAlignment="Top" Canvas.Left="182" Width="90"/>
+        <Label Content="Student Name" HorizontalAlignment="Left" Canvas.Top="57" VerticalAlignment="Top" Width="93" Canvas.Left="181"/>
+        <TextBox x:Name="txtStudentName" TextWrapping="Wrap" Width="162" Canvas.Left="287" Canvas.Top="61" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" Canvas.Left="466" Canvas.Top="57" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Click="btnAddStudent_Click"/>
+        <Label Content="Enter an Index" Canvas.Left="181" Canvas.Top="108" HorizontalAlignment="Left" VerticalAlignment="Top" Width="93"/>
+        <TextBox x:Name="txtIndex" TextWrapping="Wrap" Width="162" Canvas.Left="287" Canvas.Top="112" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Button x:Name="btnDisplayStudent" Content="Display Student Name" Canvas.Left="466" Canvas.Top="111" HorizontalAlignment="Left" VerticalAlignment="Top" Width="130" Click="btnDisplayStudent_Click"/>
+        <Button x:Name="btnRemoveByIndex" Content="Remove by Index" Canvas.Left="311" Canvas.Top="328" HorizontalAlignment="Left" VerticalAlignment="Top" Width="127" Click="btnRemoveByIndex_Click"/>
+        <Button x:Name="btnAddAtIndex" Content="Add Student at Index" Canvas.Left="452" Canvas.Top="328" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Click="btnAddAtIndex_Click"/>
+        <Button x:Name="btnClear" Content="Clear the List" Canvas.Left="374" Canvas.Top="369" HorizontalAlignment="Left" VerticalAlignment="Center" Width="138" Click="btnClear_Click"/>
 
 
     </Canvas>
